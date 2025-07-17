@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clone Youtube</title>
+</head>
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="left-header">
+                <div class="menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="black" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </div>
+
+                <div class="logo">
+                    <img src="./img/logo.png" alt="YouTube Logo">
+                    <span>BR</span>
+                </div>
+            </div>
+
+            <div class="center-header">
+                <div class="search-container">
+                    <input type="text" placeholder="Pesquisar">
+                        <img src="./img/icons/keyboard.png" class="keyboard-icon" />
+                    <div class="search-divider"></div>
+                    <button type="submit" class="search-button">
+                        <img src="./img/icons/search.png" width="24" height="24" alt="Search Icon" />
+                    </button>
+                </div>
+                <div class="voz-search">
+                    <button class="microphone-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="24" height="24">
+                            <rect x="24" y="14" width="16" height="28" rx="8" ry="8"/>
+                            <path d="M16 28 v8 a16 16 0 0 0 32 0 v-8 h-4 v8 a12 12 0 0 1 -24 0 v-8 z"/>
+                            <rect x="30" y="50" width="4" height="10"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="right-header">
+                <div class="criar-video">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="12" y1="5" x2="12" y2="19" />
+                        <line x1="5" y1="12" x2="19" y2="12" />
+                    </svg>
+                    <span>Criar</span>
+                </div>
+               <div class="notifications">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 8a6 6 0 00-12 0c0 7-3 9-3 9h18s-3-2-3-9" />
+                        <path d="M13.73 19a2 4 0 01-3.46 0" />
+                    </svg>
+                </div>
+                <div class="user-profile">
+                    <img src="https://picsum.photos/40/40?random=1" alt="Perfil do Usuário">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main-content">
+        <div class="content">
+            <iframe class="video-player" width="660" height="350" src="https://www.youtube.com/embed/izGwDsrQ1eQ?si=nH-o1i8ywTu1IoNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h1 class="titulo-video">George Michael - Careless Whisper (Official Video)</h1>
+
+            <div class="info-acoes-canal">
+                <div class="detalhes-canal">
+                    <div class="foto-canal">
+                        <img src="https://yt3.ggpht.com/O1Ro905FoPnkjhUG52W4sbH4CM6cVdPrdvoWOY6XQafKROz_djL0y27gMP44tvCYWQo8DBJb7gw=s48-c-k-c0x00ffffff-no-rj" alt="Foto do Canal">
+                    </div>
+                    <div class="nome-canal-info">
+                        <div class="nome-verificado">
+                            <p class="nome-canal">georgemichael</p>
+                            <svg class="verificado-badge" xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"></path></svg>
+                        </div>
+                        <p class="inscritos">38,7 mi de inscritos</p>
+                    </div>
+                </div>
+
+                <button class="botao-inscrever">Inscrever-se</button>
+
+                <div class="botoes-acao">
+                    <div class="like-dislike">
+                        <button>
+                            <img src="./img/icons/like.png" width="24" height="24" alt="Like" />
+                            <span>1,2 mi</span>
+                        </button>
+                        <div class="divisor-botoes"></div>
+                        <button>
+                            <img src="./img/icons/deslike.png" width="24" height="24" alt="Like" />
+                        </button>
+                    </div>
+                    <div class="compartilhar">
+                        <button>
+                            <img src="./img/icons/share.png" width="24" height="24" alt="Like" />
+                            <span>Compartilhar</span>
+                        </button>
+                    </div>
+                    <div class="mais-opcoes">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M5 15c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0"></path>
+                                <path d="M12.5 15c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0"></path>
+                                <path d="M20 15c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0"></path>
+                           </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="descricao-video">
+                <div class="visualizacoes-tempo">
+                    <strong>1.670.323.084 visualizações</strong>
+                    <span>há 12 anos</span>
+                </div>
+                <p class="resumo-descricao">
+                    A Galinha Pintadinha e sua turma têm novas músicas e uma nova app. Busque por "Galinha Pintadinha" na Google Play ou App Store.
+                </p>
+            </div>
+        </div>
+        <aside class="sidebar">
+            <div class="tags-sidebar">
+                <button class="tag-ativa">Todos</button>
+                <button>De georgemichael</button>
+                <button>Relacionados</button>
+                <button>&gt;</button>
+            </div>
+            <div class="lista-videos-sidebar">
+                <div class="video-sugerido">
+                    <img class="thumbnail-sugerido" src="https://picsum.photos/168/94?random=3" alt="Thumbnail video sugerido">
+                    <div class="detalhes-video-sugerido">
+                        <h4 class="titulo-video-sugerido">George Michael - Father Figure</h4>
+                        <p class="canal-video-sugerido">georgemichael</p>
+                        <p class="views-video-sugerido">845 mi de visualizações • há 12 anos</p>
+                    </div>
+                    <div class="mais-opcoes-video">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </div>
+                </div>
+                <div class="video-sugerido">
+                    <img class="thumbnail-sugerido" src="https://picsum.photos/168/94?random=4" alt="Thumbnail video sugerido">
+                    <div class="detalhes-video-sugerido">
+                        <h4 class="titulo-video-sugerido">Kiara Rocks - Careless Whisper</h4>
+                        <p class="canal-video-sugerido">Kiara Rocks</p>
+                        <p class="views-video-sugerido">350 mil de visualizações • há 8 anos</p>
+                    </div>
+                    <div class="mais-opcoes-video">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </div>
+                </div>
+                <div class="video-sugerido">
+                    <img class="thumbnail-sugerido" src="https://picsum.photos/168/94?random=5" alt="Thumbnail video sugerido">
+                    <div class="detalhes-video-sugerido">
+                        <h4 class="titulo-video-sugerido">A Roda do Ônibus - Bolofofos</h4>
+                        <p class="canal-video-sugerido">Bolofofos</p>
+                        <p class="views-video-sugerido">312 mi de visualizações • há 2 anos</p>
+                    </div>
+                    <div class="mais-opcoes-video">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 8c1.1 0 2-.9 2-2s-.9-2-2-2-2 .9-2 2 .9 2 2 2zm0 2c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm0 6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    
+</body>
+</html>
